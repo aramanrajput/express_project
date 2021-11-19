@@ -24,8 +24,8 @@ app.get("/users",(req,res)=>{
     res.send(data)
 })
 
-app.listen(2345,()=>{
-    console.log("listening to port 2345")
+app.listen(2346,()=>{
+    console.log("listening to port 2346")
 })
 
 
