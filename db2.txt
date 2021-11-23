@@ -1,0 +1,1753 @@
+> db.movies.find({}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c54"),
+        "id" : 1,
+        "movie_name" : "Jurassic Park III",
+        "movie_genre" : "Action|Adventure|Sci-Fi|Thriller",
+        "production_year" : 2010,
+        "budget" : 18914
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c55"),
+        "id" : 2,
+        "movie_name" : "Finian's Rainbow",
+        "movie_genre" : "Fantasy|Musical",
+        "production_year" : 2014,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c56"),
+        "id" : 3,
+        "movie_name" : "Admissions",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 19444
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c57"),
+        "id" : 4,
+        "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2002,
+        "budget" : 16557
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c58"),
+        "id" : 5,
+        "movie_name" : "Travels with My Aunt",
+        "movie_genre" : "Adventure|Comedy|Drama",
+        "production_year" : 2001,
+        "budget" : 18082
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c59"),
+        "id" : 6,
+        "movie_name" : "Not Safe for Work",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 19186
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5a"),
+        "id" : 7,
+        "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)",
+        "movie_genre" : "Documentary",
+        "production_year" : 1997,
+        "budget" : 19379
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5b"),
+        "id" : 8,
+        "movie_name" : "Keeper, The",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1991,
+        "budget" : 15466
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5c"),
+        "id" : 9,
+        "movie_name" : "Future by Design",
+        "movie_genre" : "Documentary|Sci-Fi",
+        "production_year" : 1992,
+        "budget" : 16937
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5d"),
+        "id" : 10,
+        "movie_name" : "Gabby Douglas Story, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 10261
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5f"),
+        "id" : 12,
+        "movie_name" : "Rugrats in Paris: The Movie",
+        "movie_genre" : "Animation|Children|Comedy",
+        "production_year" : 1996,
+        "budget" : 14041
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c60"),
+        "id" : 13,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 16494
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c61"),
+        "id" : 14,
+        "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 18294
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c63"),
+        "id" : 16,
+        "movie_name" : "House on Telegraph Hill, The",
+        "movie_genre" : "Drama|Film-Noir|Mystery|Thriller",
+        "production_year" : 1992,
+        "budget" : 13335
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c65"),
+        "id" : 18,
+        "movie_name" : "Terminator 3: Rise of the Machines",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1997,
+        "budget" : 11783
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c66"),
+        "id" : 19,
+        "movie_name" : "While She Was Out",
+        "movie_genre" : "Thriller",
+        "production_year" : 1991,
+        "budget" : 13754
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c67"),
+        "id" : 20,
+        "movie_name" : "Disclosure",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 15387
+}
+Type "it" for more
+> db.movies.find({movie_name:"Disclosure"})
+{ "_id" : ObjectId("619d0356652afb87f5929c67"), "id" : 20, "movie_name" : "Disclosure", "movie_genre" : "Drama|Thriller", "production_year" : 1990, "budget" : 15387 }
+> db.movies.find(movie_name:{$eq:"Admissions"}})
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:25
+> db.movies.find({movie_name:{$eq:"Admissions"}})
+{ "_id" : ObjectId("619d0356652afb87f5929c56"), "id" : 3, "movie_name" : "Admissions", "movie_genre" : "Drama", "production_year" : 2000, "budget" : 19444 }
+> db.movies.find({movie_name:{$ne:"Disclosure"}})
+{ "_id" : ObjectId("619d0356652afb87f5929c54"), "id" : 1, "movie_name" : "Jurassic Park III", "movie_genre" : "Action|Adventure|Sci-Fi|Thriller", "production_year" : 2010, "budget" : 18914 }
+{ "_id" : ObjectId("619d0356652afb87f5929c55"), "id" : 2, "movie_name" : "Finian's Rainbow", "movie_genre" : "Fantasy|Musical", "production_year" : 2014, "budget" : 16190 }
+{ "_id" : ObjectId("619d0356652afb87f5929c56"), "id" : 3, "movie_name" : "Admissions", "movie_genre" : "Drama", "production_year" : 2000, "budget" : 19444 }
+{ "_id" : ObjectId("619d0356652afb87f5929c57"), "id" : 4, "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)", "movie_genre" : "Drama|War", "production_year" : 2002, "budget" : 16557 }
+{ "_id" : ObjectId("619d0356652afb87f5929c58"), "id" : 5, "movie_name" : "Travels with My Aunt", "movie_genre" : "Adventure|Comedy|Drama", "production_year" : 2001, "budget" : 18082 }
+{ "_id" : ObjectId("619d0356652afb87f5929c59"), "id" : 6, "movie_name" : "Not Safe for Work", "movie_genre" : "Thriller", "production_year" : 2002, "budget" : 19186 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5a"), "id" : 7, "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)", "movie_genre" : "Documentary", "production_year" : 1997, "budget" : 19379 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5b"), "id" : 8, "movie_name" : "Keeper, The", "movie_genre" : "Action|Crime|Thriller", "production_year" : 1991, "budget" : 15466 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5c"), "id" : 9, "movie_name" : "Future by Design", "movie_genre" : "Documentary|Sci-Fi", "production_year" : 1992, "budget" : 16937 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5d"), "id" : 10, "movie_name" : "Gabby Douglas Story, The", "movie_genre" : "Drama", "production_year" : 2011, "budget" : 10261 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5e"), "id" : 11, "movie_name" : "Aziz Ansari: Live at Madison Square Garden", "movie_genre" : "Comedy", "production_year" : 1991, "budget" : 9120 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5f"), "id" : 12, "movie_name" : "Rugrats in Paris: The Movie", "movie_genre" : "Animation|Children|Comedy", "production_year" : 1996, "budget" : 14041 }
+{ "_id" : ObjectId("619d0356652afb87f5929c60"), "id" : 13, "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)", "movie_genre" : "Drama", "production_year" : 1992, "budget" : 16494 }
+{ "_id" : ObjectId("619d0356652afb87f5929c61"), "id" : 14, "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)", "movie_genre" : "Comedy|Romance", "production_year" : 2015, "budget" : 18294 }
+{ "_id" : ObjectId("619d0356652afb87f5929c62"), "id" : 15, "movie_name" : "Time Machine, The", "movie_genre" : "Action|Adventure|Sci-Fi", "production_year" : 1995, "budget" : 9502 }
+{ "_id" : ObjectId("619d0356652afb87f5929c63"), "id" : 16, "movie_name" : "House on Telegraph Hill, The", "movie_genre" : "Drama|Film-Noir|Mystery|Thriller", "production_year" : 1992, "budget" : 13335 }
+{ "_id" : ObjectId("619d0356652afb87f5929c64"), "id" : 17, "movie_name" : "Edge of Darkness", "movie_genre" : "Drama|Thriller", "production_year" : 1994, "budget" : 9277 }
+{ "_id" : ObjectId("619d0356652afb87f5929c65"), "id" : 18, "movie_name" : "Terminator 3: Rise of the Machines", "movie_genre" : "Action|Adventure|Sci-Fi", "production_year" : 1997, "budget" : 11783 }
+{ "_id" : ObjectId("619d0356652afb87f5929c66"), "id" : 19, "movie_name" : "While She Was Out", "movie_genre" : "Thriller", "production_year" : 1991, "budget" : 13754 }
+{ "_id" : ObjectId("619d0356652afb87f5929c68"), "id" : 21, "movie_name" : "Creature Wasn't Nice, The (a.k.a. Naked Space) (a.k.a. Spaceship)", "movie_genre" : "Comedy|Horror|Musical|Sci-Fi", "production_year" : 2012, "budget" : 12705 }
+Type "it" for more
+> db.movies.find({budget:{$gt:9000}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c54"),
+        "id" : 1,
+        "movie_name" : "Jurassic Park III",
+        "movie_genre" : "Action|Adventure|Sci-Fi|Thriller",
+        "production_year" : 2010,
+        "budget" : 18914
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c55"),
+        "id" : 2,
+        "movie_name" : "Finian's Rainbow",
+        "movie_genre" : "Fantasy|Musical",
+        "production_year" : 2014,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c56"),
+        "id" : 3,
+        "movie_name" : "Admissions",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 19444
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c57"),
+        "id" : 4,
+        "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2002,
+        "budget" : 16557
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c58"),
+        "id" : 5,
+        "movie_name" : "Travels with My Aunt",
+        "movie_genre" : "Adventure|Comedy|Drama",
+        "production_year" : 2001,
+        "budget" : 18082
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c59"),
+        "id" : 6,
+        "movie_name" : "Not Safe for Work",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 19186
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5a"),
+        "id" : 7,
+        "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)",
+        "movie_genre" : "Documentary",
+        "production_year" : 1997,
+        "budget" : 19379
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5b"),
+        "id" : 8,
+        "movie_name" : "Keeper, The",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1991,
+        "budget" : 15466
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5c"),
+        "id" : 9,
+        "movie_name" : "Future by Design",
+        "movie_genre" : "Documentary|Sci-Fi",
+        "production_year" : 1992,
+        "budget" : 16937
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5d"),
+        "id" : 10,
+        "movie_name" : "Gabby Douglas Story, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 10261
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5f"),
+        "id" : 12,
+        "movie_name" : "Rugrats in Paris: The Movie",
+        "movie_genre" : "Animation|Children|Comedy",
+        "production_year" : 1996,
+        "budget" : 14041
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c60"),
+        "id" : 13,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 16494
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c61"),
+        "id" : 14,
+        "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 18294
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c63"),
+        "id" : 16,
+        "movie_name" : "House on Telegraph Hill, The",
+        "movie_genre" : "Drama|Film-Noir|Mystery|Thriller",
+        "production_year" : 1992,
+        "budget" : 13335
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c65"),
+        "id" : 18,
+        "movie_name" : "Terminator 3: Rise of the Machines",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1997,
+        "budget" : 11783
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c66"),
+        "id" : 19,
+        "movie_name" : "While She Was Out",
+        "movie_genre" : "Thriller",
+        "production_year" : 1991,
+        "budget" : 13754
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c67"),
+        "id" : 20,
+        "movie_name" : "Disclosure",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 15387
+}
+Type "it" for more
+> db.movies.find({budget:{$gte:15387}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c54"),
+        "id" : 1,
+        "movie_name" : "Jurassic Park III",
+        "movie_genre" : "Action|Adventure|Sci-Fi|Thriller",
+        "production_year" : 2010,
+        "budget" : 18914
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c55"),
+        "id" : 2,
+        "movie_name" : "Finian's Rainbow",
+        "movie_genre" : "Fantasy|Musical",
+        "production_year" : 2014,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c56"),
+        "id" : 3,
+        "movie_name" : "Admissions",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 19444
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c57"),
+        "id" : 4,
+        "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2002,
+        "budget" : 16557
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c58"),
+        "id" : 5,
+        "movie_name" : "Travels with My Aunt",
+        "movie_genre" : "Adventure|Comedy|Drama",
+        "production_year" : 2001,
+        "budget" : 18082
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c59"),
+        "id" : 6,
+        "movie_name" : "Not Safe for Work",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 19186
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5a"),
+        "id" : 7,
+        "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)",
+        "movie_genre" : "Documentary",
+        "production_year" : 1997,
+        "budget" : 19379
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5b"),
+        "id" : 8,
+        "movie_name" : "Keeper, The",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1991,
+        "budget" : 15466
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5c"),
+        "id" : 9,
+        "movie_name" : "Future by Design",
+        "movie_genre" : "Documentary|Sci-Fi",
+        "production_year" : 1992,
+        "budget" : 16937
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c60"),
+        "id" : 13,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 16494
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c61"),
+        "id" : 14,
+        "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 18294
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c67"),
+        "id" : 20,
+        "movie_name" : "Disclosure",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 15387
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c6b"),
+        "id" : 24,
+        "movie_name" : "Madame Butterfly",
+        "movie_genre" : "Musical",
+        "production_year" : 1995,
+        "budget" : 16170
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c6d"),
+        "id" : 26,
+        "movie_name" : "Life Is What You Make It (Linha de Passe)",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "budget" : 17296
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c6f"),
+        "id" : 28,
+        "movie_name" : "127 Hours",
+        "movie_genre" : "Adventure|Drama|Thriller",
+        "production_year" : 1997,
+        "budget" : 19540
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c71"),
+        "id" : 30,
+        "movie_name" : "Scenes From a Marriage (Scener ur ett äktenskap)",
+        "movie_genre" : "Drama",
+        "production_year" : 2014,
+        "budget" : 18230
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c72"),
+        "id" : 31,
+        "movie_name" : "Life Is Hot in Cracktown",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "budget" : 16120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c73"),
+        "id" : 32,
+        "movie_name" : "Secret of My Succe$s, The (a.k.a. The Secret of My Success)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2017,
+        "budget" : 18673
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c77"),
+        "id" : 36,
+        "movie_name" : "Surfer, Dude",
+        "movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : 16409
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c7d"),
+        "id" : 42,
+        "movie_name" : "Swept Away",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1998,
+        "budget" : 19473
+}
+Type "it" for more
+> db.movies.find(budget:{$lt:10000}}).pretty()
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:21
+> db.movies.find({budget:{$lt:10000}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c74"),
+        "id" : 33,
+        "movie_name" : "Dead in the Water",
+        "movie_genre" : "Crime|Thriller",
+        "production_year" : 2003,
+        "budget" : 9221
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c75"),
+        "id" : 34,
+        "movie_name" : "Ego",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 9506
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c7b"),
+        "id" : 40,
+        "movie_name" : "Beyond the Lights",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9265
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb2"),
+        "id" : 95,
+        "movie_name" : "Operation Mad Ball",
+        "movie_genre" : "Comedy|War",
+        "production_year" : 1997,
+        "budget" : 9835
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb5"),
+        "id" : 98,
+        "movie_name" : "Letter from an Unknown Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "budget" : 9873
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb6"),
+        "id" : 99,
+        "movie_name" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 9680
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cbe"),
+        "id" : 107,
+        "movie_name" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 9443
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd8"),
+        "id" : 133,
+        "movie_name" : "Black & White & Sex",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 9228
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd9"),
+        "id" : 134,
+        "movie_name" : "War of the Robots (La guerra dei robot)",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1999,
+        "budget" : 9574
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929ce8"),
+        "id" : 149,
+        "movie_name" : "Claustrofobia",
+        "movie_genre" : "Thriller",
+        "production_year" : 1997,
+        "budget" : 9299
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cec"),
+        "id" : 153,
+        "movie_name" : "Invisible Woman, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1990,
+        "budget" : 9719
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cfe"),
+        "id" : 171,
+        "movie_name" : "Bread and Alley (Nan va Koutcheh)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9840
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d01"),
+        "id" : 174,
+        "movie_name" : "Perfect Score, The",
+        "movie_genre" : "Comedy|Crime",
+        "production_year" : 2003,
+        "budget" : 9262
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d04"),
+        "id" : 177,
+        "movie_name" : "Gremlins",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 1997,
+        "budget" : 9745
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d08"),
+        "id" : 181,
+        "movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 9179
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1b"),
+        "id" : 200,
+        "movie_name" : "Thief, The (Vor)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9628
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1d"),
+        "id" : 202,
+        "movie_name" : "SuperBabies: Baby Geniuses 2",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9071
+}
+Type "it" for more
+> db.movies.find({budget:{$lte:10000}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c74"),
+        "id" : 33,
+        "movie_name" : "Dead in the Water",
+        "movie_genre" : "Crime|Thriller",
+        "production_year" : 2003,
+        "budget" : 9221
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c75"),
+        "id" : 34,
+        "movie_name" : "Ego",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 9506
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c7b"),
+        "id" : 40,
+        "movie_name" : "Beyond the Lights",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9265
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb2"),
+        "id" : 95,
+        "movie_name" : "Operation Mad Ball",
+        "movie_genre" : "Comedy|War",
+        "production_year" : 1997,
+        "budget" : 9835
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb5"),
+        "id" : 98,
+        "movie_name" : "Letter from an Unknown Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "budget" : 9873
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb6"),
+        "id" : 99,
+        "movie_name" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 9680
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cbe"),
+        "id" : 107,
+        "movie_name" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 9443
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd8"),
+        "id" : 133,
+        "movie_name" : "Black & White & Sex",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 9228
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd9"),
+        "id" : 134,
+        "movie_name" : "War of the Robots (La guerra dei robot)",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1999,
+        "budget" : 9574
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929ce8"),
+        "id" : 149,
+        "movie_name" : "Claustrofobia",
+        "movie_genre" : "Thriller",
+        "production_year" : 1997,
+        "budget" : 9299
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cec"),
+        "id" : 153,
+        "movie_name" : "Invisible Woman, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1990,
+        "budget" : 9719
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cfe"),
+        "id" : 171,
+        "movie_name" : "Bread and Alley (Nan va Koutcheh)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9840
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d01"),
+        "id" : 174,
+        "movie_name" : "Perfect Score, The",
+        "movie_genre" : "Comedy|Crime",
+        "production_year" : 2003,
+        "budget" : 9262
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d04"),
+        "id" : 177,
+        "movie_name" : "Gremlins",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 1997,
+        "budget" : 9745
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d08"),
+        "id" : 181,
+        "movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 9179
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1b"),
+        "id" : 200,
+        "movie_name" : "Thief, The (Vor)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9628
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1d"),
+        "id" : 202,
+        "movie_name" : "SuperBabies: Baby Geniuses 2",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9071
+}
+> db.movies.find({}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c54"),
+        "id" : 1,
+        "movie_name" : "Jurassic Park III",
+        "movie_genre" : "Action|Adventure|Sci-Fi|Thriller",
+        "production_year" : 2010,
+        "budget" : 18914
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c55"),
+        "id" : 2,
+        "movie_name" : "Finian's Rainbow",
+        "movie_genre" : "Fantasy|Musical",
+        "production_year" : 2014,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c56"),
+        "id" : 3,
+        "movie_name" : "Admissions",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 19444
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c57"),
+        "id" : 4,
+        "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2002,
+        "budget" : 16557
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c58"),
+        "id" : 5,
+        "movie_name" : "Travels with My Aunt",
+        "movie_genre" : "Adventure|Comedy|Drama",
+        "production_year" : 2001,
+        "budget" : 18082
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c59"),
+        "id" : 6,
+        "movie_name" : "Not Safe for Work",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 19186
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5a"),
+        "id" : 7,
+        "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)",
+        "movie_genre" : "Documentary",
+        "production_year" : 1997,
+        "budget" : 19379
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5b"),
+        "id" : 8,
+        "movie_name" : "Keeper, The",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1991,
+        "budget" : 15466
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5c"),
+        "id" : 9,
+        "movie_name" : "Future by Design",
+        "movie_genre" : "Documentary|Sci-Fi",
+        "production_year" : 1992,
+        "budget" : 16937
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5d"),
+        "id" : 10,
+        "movie_name" : "Gabby Douglas Story, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 10261
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5f"),
+        "id" : 12,
+        "movie_name" : "Rugrats in Paris: The Movie",
+        "movie_genre" : "Animation|Children|Comedy",
+        "production_year" : 1996,
+        "budget" : 14041
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c60"),
+        "id" : 13,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 16494
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c61"),
+        "id" : 14,
+        "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 18294
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c63"),
+        "id" : 16,
+        "movie_name" : "House on Telegraph Hill, The",
+        "movie_genre" : "Drama|Film-Noir|Mystery|Thriller",
+        "production_year" : 1992,
+        "budget" : 13335
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c65"),
+        "id" : 18,
+        "movie_name" : "Terminator 3: Rise of the Machines",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1997,
+        "budget" : 11783
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c66"),
+        "id" : 19,
+        "movie_name" : "While She Was Out",
+        "movie_genre" : "Thriller",
+        "production_year" : 1991,
+        "budget" : 13754
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c67"),
+        "id" : 20,
+        "movie_name" : "Disclosure",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 15387
+}
+Type "it" for more
+> db.movies.find({movie_name:"Disclosure"})
+{ "_id" : ObjectId("619d0356652afb87f5929c67"), "id" : 20, "movie_name" : "Disclosure", "movie_genre" : "Drama|Thriller", "production_year" : 1990, "budget" : 15387 }
+> db.movies.find(movie_name:{$eq:"Admissions"}})
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:25
+> db.movies.find({movie_name:{$eq:"Admissions"}})
+{ "_id" : ObjectId("619d0356652afb87f5929c56"), "id" : 3, "movie_name" : "Admissions", "movie_genre" : "Drama", "production_year" : 2000, "budget" : 19444 }
+> db.movies.find({movie_name:{$ne:"Disclosure"}})
+{ "_id" : ObjectId("619d0356652afb87f5929c54"), "id" : 1, "movie_name" : "Jurassic Park III", "movie_genre" : "Action|Adventure|Sci-Fi|Thriller", "production_year" : 2010, "budget" : 18914 }
+{ "_id" : ObjectId("619d0356652afb87f5929c55"), "id" : 2, "movie_name" : "Finian's Rainbow", "movie_genre" : "Fantasy|Musical", "production_year" : 2014, "budget" : 16190 }
+{ "_id" : ObjectId("619d0356652afb87f5929c56"), "id" : 3, "movie_name" : "Admissions", "movie_genre" : "Drama", "production_year" : 2000, "budget" : 19444 }
+{ "_id" : ObjectId("619d0356652afb87f5929c57"), "id" : 4, "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)", "movie_genre" : "Drama|War", "production_year" : 2002, "budget" : 16557 }
+{ "_id" : ObjectId("619d0356652afb87f5929c58"), "id" : 5, "movie_name" : "Travels with My Aunt", "movie_genre" : "Adventure|Comedy|Drama", "production_year" : 2001, "budget" : 18082 }
+{ "_id" : ObjectId("619d0356652afb87f5929c59"), "id" : 6, "movie_name" : "Not Safe for Work", "movie_genre" : "Thriller", "production_year" : 2002, "budget" : 19186 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5a"), "id" : 7, "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)", "movie_genre" : "Documentary", "production_year" : 1997, "budget" : 19379 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5b"), "id" : 8, "movie_name" : "Keeper, The", "movie_genre" : "Action|Crime|Thriller", "production_year" : 1991, "budget" : 15466 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5c"), "id" : 9, "movie_name" : "Future by Design", "movie_genre" : "Documentary|Sci-Fi", "production_year" : 1992, "budget" : 16937 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5d"), "id" : 10, "movie_name" : "Gabby Douglas Story, The", "movie_genre" : "Drama", "production_year" : 2011, "budget" : 10261 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5e"), "id" : 11, "movie_name" : "Aziz Ansari: Live at Madison Square Garden", "movie_genre" : "Comedy", "production_year" : 1991, "budget" : 9120 }
+{ "_id" : ObjectId("619d0356652afb87f5929c5f"), "id" : 12, "movie_name" : "Rugrats in Paris: The Movie", "movie_genre" : "Animation|Children|Comedy", "production_year" : 1996, "budget" : 14041 }
+{ "_id" : ObjectId("619d0356652afb87f5929c60"), "id" : 13, "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)", "movie_genre" : "Drama", "production_year" : 1992, "budget" : 16494 }
+{ "_id" : ObjectId("619d0356652afb87f5929c61"), "id" : 14, "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)", "movie_genre" : "Comedy|Romance", "production_year" : 2015, "budget" : 18294 }
+{ "_id" : ObjectId("619d0356652afb87f5929c62"), "id" : 15, "movie_name" : "Time Machine, The", "movie_genre" : "Action|Adventure|Sci-Fi", "production_year" : 1995, "budget" : 9502 }
+{ "_id" : ObjectId("619d0356652afb87f5929c63"), "id" : 16, "movie_name" : "House on Telegraph Hill, The", "movie_genre" : "Drama|Film-Noir|Mystery|Thriller", "production_year" : 1992, "budget" : 13335 }
+{ "_id" : ObjectId("619d0356652afb87f5929c64"), "id" : 17, "movie_name" : "Edge of Darkness", "movie_genre" : "Drama|Thriller", "production_year" : 1994, "budget" : 9277 }
+{ "_id" : ObjectId("619d0356652afb87f5929c65"), "id" : 18, "movie_name" : "Terminator 3: Rise of the Machines", "movie_genre" : "Action|Adventure|Sci-Fi", "production_year" : 1997, "budget" : 11783 }
+{ "_id" : ObjectId("619d0356652afb87f5929c66"), "id" : 19, "movie_name" : "While She Was Out", "movie_genre" : "Thriller", "production_year" : 1991, "budget" : 13754 }
+{ "_id" : ObjectId("619d0356652afb87f5929c68"), "id" : 21, "movie_name" : "Creature Wasn't Nice, The (a.k.a. Naked Space) (a.k.a. Spaceship)", "movie_genre" : "Comedy|Horror|Musical|Sci-Fi", "production_year" : 2012, "budget" : 12705 }
+Type "it" for more
+> db.movies.find({budget:{$gt:9000}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c54"),
+        "id" : 1,
+        "movie_name" : "Jurassic Park III",
+        "movie_genre" : "Action|Adventure|Sci-Fi|Thriller",
+        "production_year" : 2010,
+        "budget" : 18914
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c55"),
+        "id" : 2,
+        "movie_name" : "Finian's Rainbow",
+        "movie_genre" : "Fantasy|Musical",
+        "production_year" : 2014,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c56"),
+        "id" : 3,
+        "movie_name" : "Admissions",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 19444
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c57"),
+        "id" : 4,
+        "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2002,
+        "budget" : 16557
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c58"),
+        "id" : 5,
+        "movie_name" : "Travels with My Aunt",
+        "movie_genre" : "Adventure|Comedy|Drama",
+        "production_year" : 2001,
+        "budget" : 18082
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c59"),
+        "id" : 6,
+        "movie_name" : "Not Safe for Work",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 19186
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5a"),
+        "id" : 7,
+        "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)",
+        "movie_genre" : "Documentary",
+        "production_year" : 1997,
+        "budget" : 19379
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5b"),
+        "id" : 8,
+        "movie_name" : "Keeper, The",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1991,
+        "budget" : 15466
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5c"),
+        "id" : 9,
+        "movie_name" : "Future by Design",
+        "movie_genre" : "Documentary|Sci-Fi",
+        "production_year" : 1992,
+        "budget" : 16937
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5d"),
+        "id" : 10,
+        "movie_name" : "Gabby Douglas Story, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 10261
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5f"),
+        "id" : 12,
+        "movie_name" : "Rugrats in Paris: The Movie",
+        "movie_genre" : "Animation|Children|Comedy",
+        "production_year" : 1996,
+        "budget" : 14041
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c60"),
+        "id" : 13,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 16494
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c61"),
+        "id" : 14,
+        "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 18294
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c63"),
+        "id" : 16,
+        "movie_name" : "House on Telegraph Hill, The",
+        "movie_genre" : "Drama|Film-Noir|Mystery|Thriller",
+        "production_year" : 1992,
+        "budget" : 13335
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c65"),
+        "id" : 18,
+        "movie_name" : "Terminator 3: Rise of the Machines",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1997,
+        "budget" : 11783
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c66"),
+        "id" : 19,
+        "movie_name" : "While She Was Out",
+        "movie_genre" : "Thriller",
+        "production_year" : 1991,
+        "budget" : 13754
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c67"),
+        "id" : 20,
+        "movie_name" : "Disclosure",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 15387
+}
+Type "it" for more
+> db.movies.find({budget:{$gte:15387}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c54"),
+        "id" : 1,
+        "movie_name" : "Jurassic Park III",
+        "movie_genre" : "Action|Adventure|Sci-Fi|Thriller",
+        "production_year" : 2010,
+        "budget" : 18914
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c55"),
+        "id" : 2,
+        "movie_name" : "Finian's Rainbow",
+        "movie_genre" : "Fantasy|Musical",
+        "production_year" : 2014,
+        "budget" : 16190
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c56"),
+        "id" : 3,
+        "movie_name" : "Admissions",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 19444
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c57"),
+        "id" : 4,
+        "movie_name" : "Sophie Scholl: The Final Days (Sophie Scholl - Die letzten Tage)",
+        "movie_genre" : "Drama|War",
+        "production_year" : 2002,
+        "budget" : 16557
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c58"),
+        "id" : 5,
+        "movie_name" : "Travels with My Aunt",
+        "movie_genre" : "Adventure|Comedy|Drama",
+        "production_year" : 2001,
+        "budget" : 18082
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c59"),
+        "id" : 6,
+        "movie_name" : "Not Safe for Work",
+        "movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : 19186
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5a"),
+        "id" : 7,
+        "movie_name" : "Ingmar Bergman on Life and Work (Ingmar Bergman: Om liv och arbete)",
+        "movie_genre" : "Documentary",
+        "production_year" : 1997,
+        "budget" : 19379
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5b"),
+        "id" : 8,
+        "movie_name" : "Keeper, The",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1991,
+        "budget" : 15466
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5c"),
+        "id" : 9,
+        "movie_name" : "Future by Design",
+        "movie_genre" : "Documentary|Sci-Fi",
+        "production_year" : 1992,
+        "budget" : 16937
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c60"),
+        "id" : 13,
+        "movie_name" : "Flesh Merchant, The (Wild and Wicked, The)",
+        "movie_genre" : "Drama",
+        "production_year" : 1992,
+        "budget" : 16494
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c61"),
+        "id" : 14,
+        "movie_name" : "Two Cents Worth of Hope (Due soldi di speranza)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2015,
+        "budget" : 18294
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c67"),
+        "id" : 20,
+        "movie_name" : "Disclosure",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1990,
+        "budget" : 15387
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c6b"),
+        "id" : 24,
+        "movie_name" : "Madame Butterfly",
+        "movie_genre" : "Musical",
+        "production_year" : 1995,
+        "budget" : 16170
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c6d"),
+        "id" : 26,
+        "movie_name" : "Life Is What You Make It (Linha de Passe)",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "budget" : 17296
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c6f"),
+        "id" : 28,
+        "movie_name" : "127 Hours",
+        "movie_genre" : "Adventure|Drama|Thriller",
+        "production_year" : 1997,
+        "budget" : 19540
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c71"),
+        "id" : 30,
+        "movie_name" : "Scenes From a Marriage (Scener ur ett äktenskap)",
+        "movie_genre" : "Drama",
+        "production_year" : 2014,
+        "budget" : 18230
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c72"),
+        "id" : 31,
+        "movie_name" : "Life Is Hot in Cracktown",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "budget" : 16120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c73"),
+        "id" : 32,
+        "movie_name" : "Secret of My Succe$s, The (a.k.a. The Secret of My Success)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2017,
+        "budget" : 18673
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c77"),
+        "id" : 36,
+        "movie_name" : "Surfer, Dude",
+        "movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : 16409
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c7d"),
+        "id" : 42,
+        "movie_name" : "Swept Away",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1998,
+        "budget" : 19473
+}
+Type "it" for more
+> db.movies.find(budget:{$lt:10000}}).pretty()
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:21
+> db.movies.find({budget:{$lt:10000}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c74"),
+        "id" : 33,
+        "movie_name" : "Dead in the Water",
+        "movie_genre" : "Crime|Thriller",
+        "production_year" : 2003,
+        "budget" : 9221
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c75"),
+        "id" : 34,
+        "movie_name" : "Ego",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 9506
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c7b"),
+        "id" : 40,
+        "movie_name" : "Beyond the Lights",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9265
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb2"),
+        "id" : 95,
+        "movie_name" : "Operation Mad Ball",
+        "movie_genre" : "Comedy|War",
+        "production_year" : 1997,
+        "budget" : 9835
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb5"),
+        "id" : 98,
+        "movie_name" : "Letter from an Unknown Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "budget" : 9873
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb6"),
+        "id" : 99,
+        "movie_name" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 9680
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cbe"),
+        "id" : 107,
+        "movie_name" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 9443
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd8"),
+        "id" : 133,
+        "movie_name" : "Black & White & Sex",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 9228
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd9"),
+        "id" : 134,
+        "movie_name" : "War of the Robots (La guerra dei robot)",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1999,
+        "budget" : 9574
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929ce8"),
+        "id" : 149,
+        "movie_name" : "Claustrofobia",
+        "movie_genre" : "Thriller",
+        "production_year" : 1997,
+        "budget" : 9299
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cec"),
+        "id" : 153,
+        "movie_name" : "Invisible Woman, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1990,
+        "budget" : 9719
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cfe"),
+        "id" : 171,
+        "movie_name" : "Bread and Alley (Nan va Koutcheh)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9840
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d01"),
+        "id" : 174,
+        "movie_name" : "Perfect Score, The",
+        "movie_genre" : "Comedy|Crime",
+        "production_year" : 2003,
+        "budget" : 9262
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d04"),
+        "id" : 177,
+        "movie_name" : "Gremlins",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 1997,
+        "budget" : 9745
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d08"),
+        "id" : 181,
+        "movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 9179
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1b"),
+        "id" : 200,
+        "movie_name" : "Thief, The (Vor)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9628
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1d"),
+        "id" : 202,
+        "movie_name" : "SuperBabies: Baby Geniuses 2",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9071
+}
+Type "it" for more
+> db.movies.find({budget:{$lte:10000}}).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929c5e"),
+        "id" : 11,
+        "movie_name" : "Aziz Ansari: Live at Madison Square Garden",
+        "movie_genre" : "Comedy",
+        "production_year" : 1991,
+        "budget" : 9120
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c62"),
+        "id" : 15,
+        "movie_name" : "Time Machine, The",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1995,
+        "budget" : 9502
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c64"),
+        "id" : 17,
+        "movie_name" : "Edge of Darkness",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c74"),
+        "id" : 33,
+        "movie_name" : "Dead in the Water",
+        "movie_genre" : "Crime|Thriller",
+        "production_year" : 2003,
+        "budget" : 9221
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c75"),
+        "id" : 34,
+        "movie_name" : "Ego",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 9506
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c7b"),
+        "id" : 40,
+        "movie_name" : "Beyond the Lights",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9265
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb2"),
+        "id" : 95,
+        "movie_name" : "Operation Mad Ball",
+        "movie_genre" : "Comedy|War",
+        "production_year" : 1997,
+        "budget" : 9835
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb5"),
+        "id" : 98,
+        "movie_name" : "Letter from an Unknown Woman",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 2000,
+        "budget" : 9873
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cb6"),
+        "id" : 99,
+        "movie_name" : "Son of Babylon (Syn Babilonu)",
+        "movie_genre" : "Drama",
+        "production_year" : 2002,
+        "budget" : 9680
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cbe"),
+        "id" : 107,
+        "movie_name" : "Butterfly (La lengua de las mariposas)",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 9443
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd8"),
+        "id" : 133,
+        "movie_name" : "Black & White & Sex",
+        "movie_genre" : "Drama",
+        "production_year" : 2005,
+        "budget" : 9228
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cd9"),
+        "id" : 134,
+        "movie_name" : "War of the Robots (La guerra dei robot)",
+        "movie_genre" : "Action|Adventure|Sci-Fi",
+        "production_year" : 1999,
+        "budget" : 9574
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929ce8"),
+        "id" : 149,
+        "movie_name" : "Claustrofobia",
+        "movie_genre" : "Thriller",
+        "production_year" : 1997,
+        "budget" : 9299
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cec"),
+        "id" : 153,
+        "movie_name" : "Invisible Woman, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1990,
+        "budget" : 9719
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929cfe"),
+        "id" : 171,
+        "movie_name" : "Bread and Alley (Nan va Koutcheh)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9840
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d01"),
+        "id" : 174,
+        "movie_name" : "Perfect Score, The",
+        "movie_genre" : "Comedy|Crime",
+        "production_year" : 2003,
+        "budget" : 9262
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d04"),
+        "id" : 177,
+        "movie_name" : "Gremlins",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 1997,
+        "budget" : 9745
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d08"),
+        "id" : 181,
+        "movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1996,
+        "budget" : 9179
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1b"),
+        "id" : 200,
+        "movie_name" : "Thief, The (Vor)",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : 9628
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d1d"),
+        "id" : 202,
+        "movie_name" : "SuperBabies: Baby Geniuses 2",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9071
+}
+> db.movies.find({},{movie_genre:0}).sort({production_year:-1},{movie_name:1}).limit(10).pretty()
+{
+        "_id" : ObjectId("619d0356652afb87f5929cf7"),
+        "id" : 164,
+        "movie_name" : "Min and Bill",
+        "production_year" : 2020,
+        "budget" : 12324
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d54"),
+        "id" : 257,
+        "movie_name" : "Burnt Offerings",
+        "production_year" : 2020,
+        "budget" : 17800
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929dcb"),
+        "id" : 376,
+        "movie_name" : "Tickets",
+        "production_year" : 2020,
+        "budget" : 15059
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d56"),
+        "id" : 259,
+        "movie_name" : "Stranger, The (Straniero, Lo)",
+        "production_year" : 2020,
+        "budget" : 12621
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929c99"),
+        "id" : 70,
+        "movie_name" : "Road Trip: Beer Pong",
+        "production_year" : 2020,
+        "budget" : 14533
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d65"),
+        "id" : 274,
+        "movie_name" : "Resurrection",
+        "production_year" : 2020,
+        "budget" : 17425
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929dd6"),
+        "id" : 387,
+        "movie_name" : "Parked",
+        "production_year" : 2020,
+        "budget" : 11776
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929dd1"),
+        "id" : 382,
+        "movie_name" : "Town That Dreaded Sundown, The",
+        "production_year" : 2020,
+        "budget" : 14936
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d46"),
+        "id" : 243,
+        "movie_name" : "Open Hearts (Elsker dig for evigt)",
+        "production_year" : 2020,
+        "budget" : 12431
+}
+{
+        "_id" : ObjectId("619d0356652afb87f5929d0c"),
+        "id" : 185,
+        "movie_name" : "Lady and the Tramp",
+        "production_year" : 2020,
+        "budget" : 19456
+}

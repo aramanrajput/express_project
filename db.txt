@@ -1,0 +1,160 @@
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use assignment
+switched to db assignment
+> db.users.insert({first_name:"arman",last_name:"singh",email:"arman@1234",gender:"male",ip_adress:"12343",age:"24"})
+WriteResult({ "nInserted" : 1 })
+> db.users.insertMany([{first_name:"akash",last_name:"kumar",email:"akash@32",gender:"male",ip_adress:"34545",age:"21"},{first_name:"arun",last_name:"sharma",email:"arun@1234",gender:"male",ip_adress:"3432",age:"25"},{first_name:"shweta",last_name:"sharma",email:"shweta@123",gender:"female",ip_adress:"3423",age:"22"},{first_name:"ashish",last_name:"sharma",email:"ashish@1234",gender:"male",ip_adress:"343",age:"21"},{first_name:"amit",last_name:"rana",email:"amit@1234",gender:"male",ip_adress:"232",age:"34"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("619bc669dcb7438b9232d876"),
+                ObjectId("619bc669dcb7438b9232d877"),
+                ObjectId("619bc669dcb7438b9232d878"),
+                ObjectId("619bc669dcb7438b9232d879"),
+                ObjectId("619bc669dcb7438b9232d87a")
+        ]
+}
+> db.users.insertMany([{first_name:"lokesh",last_name:"rahul",email:"rahul@123",gender:"male",ip_adress:"432",age:"26"},{first_name:"rohit",last_name:"sharma",email:"rohit@123",gender:"male",ip_adress:"3434",age:"32"},{first_name:"shivam",last_name:"dube",email:"dube@123",gender:"male",ip_adress:"43",age:"21"},{first_name:"shreyesh",last_name:"iyer",email:"shreyesh@13",gender:"male",ip_adress:"2343",age:"21"},{first_name:"virat",last_name:"kohli",email:"virat@1232",gender:"male",ip_adress:"23432",age:"24"}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("619bc887dcb7438b9232d87b"),
+                ObjectId("619bc887dcb7438b9232d87c"),
+                ObjectId("619bc887dcb7438b9232d87d"),
+                ObjectId("619bc887dcb7438b9232d87e"),
+                ObjectId("619bc887dcb7438b9232d87f")
+        ]
+}
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("619bc395dcb7438b9232d875"),
+        "first_name" : "arman",
+        "last_name" : "singh",
+        "email" : "arman@1234",
+        "gender" : "male",
+        "ip_adress" : "12343",
+        "age" : "24"
+}
+{
+        "_id" : ObjectId("619bc669dcb7438b9232d876"),
+        "first_name" : "akash",
+        "last_name" : "kumar",
+        "email" : "akash@32",
+        "gender" : "male",
+        "ip_adress" : "34545",
+        "age" : "21"
+}
+{
+        "_id" : ObjectId("619bc669dcb7438b9232d877"),
+        "first_name" : "arun",
+        "last_name" : "sharma",
+        "email" : "arun@1234",
+        "gender" : "male",
+        "ip_adress" : "3432",
+        "age" : "25"
+}
+{
+        "_id" : ObjectId("619bc669dcb7438b9232d878"),
+        "first_name" : "shweta",
+        "last_name" : "sharma",
+        "email" : "shweta@123",
+        "gender" : "female",
+        "ip_adress" : "3423",
+        "age" : "22"
+}
+{
+        "_id" : ObjectId("619bc669dcb7438b9232d879"),
+        "first_name" : "ashish",
+        "last_name" : "sharma",
+        "email" : "ashish@1234",
+        "gender" : "male",
+        "ip_adress" : "343",
+        "age" : "21"
+}
+{
+        "_id" : ObjectId("619bc669dcb7438b9232d87a"),
+        "first_name" : "amit",
+        "last_name" : "rana",
+        "email" : "amit@1234",
+        "gender" : "male",
+        "ip_adress" : "232",
+        "age" : "34"
+}
+{
+        "_id" : ObjectId("619bc887dcb7438b9232d87b"),
+        "first_name" : "lokesh",
+        "last_name" : "rahul",
+        "email" : "rahul@123",
+        "gender" : "male",
+        "ip_adress" : "432",
+        "age" : "26"
+}
+{
+        "_id" : ObjectId("619bc887dcb7438b9232d87c"),
+        "first_name" : "rohit",
+        "last_name" : "sharma",
+        "email" : "rohit@123",
+        "gender" : "male",
+        "ip_adress" : "3434",
+        "age" : "32"
+}
+{
+        "_id" : ObjectId("619bc887dcb7438b9232d87d"),
+        "first_name" : "shivam",
+        "last_name" : "dube",
+        "email" : "dube@123",
+        "gender" : "male",
+        "ip_adress" : "43",
+        "age" : "21"
+}
+{
+        "_id" : ObjectId("619bc887dcb7438b9232d87e"),
+        "first_name" : "shreyesh",
+        "last_name" : "iyer",
+        "email" : "shreyesh@13",
+        "gender" : "male",
+        "ip_adress" : "2343",
+        "age" : "21"
+}
+{
+        "_id" : ObjectId("619bc887dcb7438b9232d87f"),
+        "first_name" : "virat",
+        "last_name" : "kohli",
+        "email" : "virat@1232",
+        "gender" : "male",
+        "ip_adress" : "23432",
+        "age" : "24"
+}
+> db.users.findOne({first_name:"virat"})
+{
+        "_id" : ObjectId("619bc887dcb7438b9232d87f"),
+        "first_name" : "virat",
+        "last_name" : "kohli",
+        "email" : "virat@1232",
+        "gender" : "male",
+        "ip_adress" : "23432",
+        "age" : "24"
+}
+> db.users.update({first_name:"rohit"},{$set:{last_name:"kumar"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.updateMany({gender:"male"},{$set:{"gender:"malemale"}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:52
+> db.users.updateMany({gender:"male"},{$set:{gender:"malemale"}})
+{ "acknowledged" : true, "matchedCount" : 10, "modifiedCount" : 10 }
+> db.users.remove({first_name:"virat"})
+WriteResult({ "nRemoved" : 1 })
+> db.users.deleteOne({gender:"female"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.users.deleteMany({age:"21"})
+{ "acknowledged" : true, "deletedCount" : 4 }
+> db.dropDatabase()
+{ "ok" : 1 }
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+>
