@@ -1029,7 +1029,7 @@ uncaught exception: SyntaxError: missing ) after argument list :
 { "_id" : ObjectId("619d0356652afb87f5929c65"), "id" : 18, "movie_name" : "Terminator 3: Rise of the Machines", "movie_genre" : "Action|Adventure|Sci-Fi", "production_year" : 1997, "budget" : 11783 }
 { "_id" : ObjectId("619d0356652afb87f5929c66"), "id" : 19, "movie_name" : "While She Was Out", "movie_genre" : "Thriller", "production_year" : 1991, "budget" : 13754 }
 { "_id" : ObjectId("619d0356652afb87f5929c68"), "id" : 21, "movie_name" : "Creature Wasn't Nice, The (a.k.a. Naked Space) (a.k.a. Spaceship)", "movie_genre" : "Comedy|Horror|Musical|Sci-Fi", "production_year" : 2012, "budget" : 12705 }
-Type "it" for more
+
 > db.movies.find({budget:{$gt:9000}}).pretty()
 {
         "_id" : ObjectId("619d0356652afb87f5929c54"),
